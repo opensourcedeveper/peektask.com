@@ -37,11 +37,26 @@
 
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        <style>
+
+            .login-page, .register-page {
+                background: #515151;
+                color: #ffff;
+            }
+           .login-logo b {
+                color: #0F4372;
+            }
+               .login-logo a {
+                color: #F36E35;
+            }
+        </style>
     </head>
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
+                <h1>
                 <a href="/"><b>Peek</b>Task</a>
+                </h1>
             </div>
             <!-- /.login-logo -->
             <div class="login-box-body">
