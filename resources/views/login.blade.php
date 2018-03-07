@@ -25,7 +25,9 @@
         <link href="{{ asset('public/dist/css/AdminLTE.min.css') }}" rel="stylesheet" />
         <!-- iCheck -->
         <link href="{{ asset('public/plugins/iCheck/square/blue.css') }}" rel="stylesheet" />
+        <!-- iCustom css -->
 
+        <link href="{{ asset('public/css/custom.css') }}" rel="stylesheet" />
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,32 +39,19 @@
 
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-        <style>
-
-            .login-page, .register-page {
-                background: #515151;
-                color: #ffff;
-            }
-           .login-logo b {
-                color: #0F4372;
-            }
-               .login-logo a {
-                color: #F36E35;
-            }
-        </style>
     </head>
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
                 <h1>
-                <a href="/"><b>Peek</b>Task</a>
+                    <a href="/"><b>Peek</b>Task</a>
                 </h1>
             </div>
             <!-- /.login-logo -->
             <div class="login-box-body">
-                <p class="login-box-msg">Sign in to start your session</p>
-
-                <form action="/" method="post">
+                <div class="title1">Sign in to. Access all services.</div> 
+                <div class="bdre2"></div>
+                <form action="#" method="post">
                     <div class="form-group has-feedback">
                         <input type="email" class="form-control" placeholder="Email">
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -72,32 +61,64 @@
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
                     <div class="row">
-                        <div class="col-xs-8">
-                            <div class="checkbox icheck">
-                                <label>
-                                    <input type="checkbox"> Remember Me
-                                </label>
+                        <div class="col-xs-12">
+                            <div class="col-xs-6">
+                                <div class="checkbox icheck">
+                                    <label>
+                                        <input type="checkbox"> Remember Me
+                                    </label>
+                                </div>
                             </div>
+                            <!-- /.col -->
+                            <div class="col-xs-6">
+                                <div class="checkbox icheck">
+                                    <label>
+                                        <a href="#">I forgot my password</a><br>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- /.col -->
                         </div>
-                        <!-- /.col -->
-                        <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-                        </div>
-                        <!-- /.col -->
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button type="submit" class="redBtn btn btn-block btn-flat">Sign In</button>
+                        </div></div>
                 </form>
 
+                <div id="fslogin_field_container" style="margin-left:20px;display:none;">
+                    <div class="label">
+
+                        <div id="fs-google-icon" class="fs-google-icon" onclick="createandSubmitOpenIDForm('google');"></div>
+
+                        <div id="fs-azure-icon" class="fs-azure-icon" onclick="createandSubmitOpenIDForm('azure');"></div>
+
+                        <div id="fs-linkedin-icon" class="fs-linkedin-icon" onclick="createandSubmitOpenIDForm('linkedin');"></div>
+
+                        <div id="fs-facebook-icon" class="fs-facebook-icon" onclick="createandSubmitOpenIDForm('facebook');"></div>
+
+                        <div id="fs-twitter-icon" class="fs-twitter-icon" onclick="createandSubmitOpenIDForm('twitter');" style="display:none;"></div>
+
+                        <div id="fs-yahoo-icon" class="fs-yahoo-icon" onclick="createandSubmitOpenIDForm('yahoo');" style="display:none;"></div>
+
+
+                        <div class="fs_signin_more_options" onclick="showModeFSOptions(this)">More options</div>
+                        <div class="ortextfromfs">Or</div>
+                        <div class="fs_signin_options_txt" onclick="switchSignInOptions()">Sign in with Zoho</div>
+                    </div>
+                </div>
+                <div class="openidcontainer" id="openidcontainer"/>
+                <div class="fs_signin_options_txt"  class="text-center" onclick="switchSignInOptions()" >Sign in with Google or other's</div>
                 <div class="social-auth-links text-center">
                     <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
+<!--                    <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
                         Facebook</a>
                     <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-                        Google+</a>
+                        Google+</a>-->
                 </div>
                 <!-- /.social-auth-links -->
 
-                <a href="#">I forgot my password</a><br>
-                <a href="#" class="text-center">Register a new membership</a>
+                <div id="signuplink" class="text-center">Don't have a PeekTask account? <a href="javascript:register()">Sign Up Now</a></div>
 
             </div>
             <!-- /.login-box-body -->
@@ -111,13 +132,54 @@
         <!-- iCheck -->
         <script type="text/javascript" src="{{ asset('public/plugins/iCheck/icheck.min.js') }}"></script>
         <script>
-$(function () {
-    $('input').iCheck({
-        checkboxClass: 'icheckbox_square-blue',
-        radioClass: 'iradio_square-blue',
-        increaseArea: '20%' /* optional */
-    });
-});
+                    $(function () {
+                        $('input').iCheck({
+                            checkboxClass: 'icheckbox_square-blue',
+                            radioClass: 'iradio_square-blue',
+                            increaseArea: '20%' /* optional */
+                        });
+                    });
+
+                    function switchSignInOptions() {
+                        if (de('openidcontainer').style.display !== 'none') {
+                            if (de('zlogin_container_title')) {
+                                de('zlogin_container_title').style.display = 'none';
+                            }
+                            if (de('fslogin_container_title')) {
+                                de('fslogin_container_title').style.display = '';
+                            }
+
+                            if (de('openidcontainer')) {
+                                de('openidcontainer').style.display = 'none';
+                            }
+
+                            $('#zlogin_field_container').slideUp(300);
+                            $('#fslogin_field_container').slideDown(300);
+
+                            if (de('signuplink')) {
+                                de('signuplink').style.display = 'none';
+                            }
+                            clearmsg();
+                        } else {
+                            if (de('zlogin_container_title')) {
+                                de('zlogin_container_title').style.display = '';
+                            }
+                            if (de('fslogin_container_title')) {
+                                de('fslogin_container_title').style.display = 'none';
+                            }
+
+                            if (de('openidcontainer')) {
+                                de('openidcontainer').style.display = '';
+                            }
+
+                            $('#zlogin_field_container').slideDown(300);
+                            $('#fslogin_field_container').slideUp(300);
+
+                            if (de('signuplink')) {
+                                de('signuplink').style.display = '';
+                            }
+                        }
+                    }
         </script>
     </body>
 </html>

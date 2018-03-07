@@ -24,3 +24,125 @@
 .skin-blue .sidebar-menu > li.active > a {
     border-left-color: #F36E35;
 }
+.login-box-body, .register-box-body {
+    background: #FFF !important;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+}
+
+.login-page, .register-page {
+    background: #FFF;
+    color: #ffff;
+}
+
+
+.login-logo b {
+    color: #0F4372;
+}
+.login-logo a {
+    color: #F36E35;
+}
+
+body, table, a, input {
+    font-family: Open Sans,helvetica,Arial,sans-serif;
+}
+
+.title2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.title1 {
+    margin-top: -14px;
+    font-size: 26px;
+    color: #393939;
+}
+
+.login-box, .register-box {
+    width: 410px;
+    margin: 7% auto;
+}
+
+.bdre2 {
+    border-bottom: 2px solid #999;
+    height: 1px;
+    margin: 6px auto;
+    margin-bottom: 6px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.unauthinputText {
+    border: 1px solid #d5d5d5;
+    margin: 0px;
+    margin-left: 0px;
+    line-height: 31px;
+    height: 31px;
+    outline: medium none;
+    padding: 2px 6px;
+    width: 260px;
+    color: #141823;
+    font-size: 14px;
+    resize: none;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 12px;
+}
+
+.redBtn {
+    background-color: #f04b2f;
+    border: 1px solid #f04b2f;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.ortext {
+    background: none repeat scroll 0 0 #fff;
+    color: #666;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0px 7px;
+    height: 0px;
+    text-transform: uppercase;
+    display: inline-table;
+    margin-top: -9px;
+    text-align: center;
+}
+.openidcontainer {
+    border-top: 2px solid #d5d5d5;
+    clear: both;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#signuplink {
+    font-size: 13px;
+    margin-left: 26px;
+    color: #666;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.redBtn:hover {
+    background-color: #e64226;
+}
+
+.fs_signin_options_txt {
+    font-size: 16px;
+    margin-top: 6px;
+    color: #478ed8;
+    cursor: pointer;
+}
