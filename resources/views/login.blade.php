@@ -108,18 +108,19 @@
                     </div>
                 </div>
                 <div class="openidcontainer" id="openidcontainer"/>
-                <div class="fs_signin_options_txt"  class="text-center" onclick="switchSignInOptions()" >Sign in with Google or other's</div>
                 <div class="social-auth-links text-center">
                     <p>- OR -</p>
 <!--                    <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
                         Facebook</a>
                     <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
                         Google+</a>-->
+                    <div class="fs_signin_options_txt"  class="text-center" onclick="switchSignInOptions()" >Sign in with Google or other's</div>
+
+                    <!-- /.social-auth-links -->
+                    <br/>
+
+                    <div id="signuplink" class="text-center">Don't have a PeekTask account? <a href="javascript:register()">Sign Up Now</a></div>
                 </div>
-                <!-- /.social-auth-links -->
-
-                <div id="signuplink" class="text-center">Don't have a PeekTask account? <a href="javascript:register()">Sign Up Now</a></div>
-
             </div>
             <!-- /.login-box-body -->
         </div>
@@ -132,54 +133,54 @@
         <!-- iCheck -->
         <script type="text/javascript" src="{{ asset('public/plugins/iCheck/icheck.min.js') }}"></script>
         <script>
-                    $(function () {
-                        $('input').iCheck({
-                            checkboxClass: 'icheckbox_square-blue',
-                            radioClass: 'iradio_square-blue',
-                            increaseArea: '20%' /* optional */
+                        $(function () {
+                            $('input').iCheck({
+                                checkboxClass: 'icheckbox_square-blue',
+                                radioClass: 'iradio_square-blue',
+                                increaseArea: '20%' /* optional */
+                            });
                         });
-                    });
 
-                    function switchSignInOptions() {
-                        if (de('openidcontainer').style.display !== 'none') {
-                            if (de('zlogin_container_title')) {
-                                de('zlogin_container_title').style.display = 'none';
-                            }
-                            if (de('fslogin_container_title')) {
-                                de('fslogin_container_title').style.display = '';
-                            }
+                        function switchSignInOptions() {
+                            if (de('openidcontainer').style.display !== 'none') {
+                                if (de('zlogin_container_title')) {
+                                    de('zlogin_container_title').style.display = 'none';
+                                }
+                                if (de('fslogin_container_title')) {
+                                    de('fslogin_container_title').style.display = '';
+                                }
 
-                            if (de('openidcontainer')) {
-                                de('openidcontainer').style.display = 'none';
-                            }
+                                if (de('openidcontainer')) {
+                                    de('openidcontainer').style.display = 'none';
+                                }
 
-                            $('#zlogin_field_container').slideUp(300);
-                            $('#fslogin_field_container').slideDown(300);
+                                $('#zlogin_field_container').slideUp(300);
+                                $('#fslogin_field_container').slideDown(300);
 
-                            if (de('signuplink')) {
-                                de('signuplink').style.display = 'none';
-                            }
-                            clearmsg();
-                        } else {
-                            if (de('zlogin_container_title')) {
-                                de('zlogin_container_title').style.display = '';
-                            }
-                            if (de('fslogin_container_title')) {
-                                de('fslogin_container_title').style.display = 'none';
-                            }
+                                if (de('signuplink')) {
+                                    de('signuplink').style.display = 'none';
+                                }
+                                clearmsg();
+                            } else {
+                                if (de('zlogin_container_title')) {
+                                    de('zlogin_container_title').style.display = '';
+                                }
+                                if (de('fslogin_container_title')) {
+                                    de('fslogin_container_title').style.display = 'none';
+                                }
 
-                            if (de('openidcontainer')) {
-                                de('openidcontainer').style.display = '';
-                            }
+                                if (de('openidcontainer')) {
+                                    de('openidcontainer').style.display = '';
+                                }
 
-                            $('#zlogin_field_container').slideDown(300);
-                            $('#fslogin_field_container').slideUp(300);
+                                $('#zlogin_field_container').slideDown(300);
+                                $('#fslogin_field_container').slideUp(300);
 
-                            if (de('signuplink')) {
-                                de('signuplink').style.display = '';
+                                if (de('signuplink')) {
+                                    de('signuplink').style.display = '';
+                                }
                             }
                         }
-                    }
         </script>
     </body>
 </html>
