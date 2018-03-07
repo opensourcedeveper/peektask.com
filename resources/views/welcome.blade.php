@@ -7,23 +7,23 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
-        <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" />
         <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
         <!-- Font Awesome -->
         <!--<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">-->
-        <link href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
         <!-- Ionicons -->
         <!--<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">-->
-        <link href="{{ asset('bower_components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet" />
         <!-- jvectormap -->
         <!--<link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">-->
-        <link href="{{ asset('bower_components/jvectormap/jquery-jvectormap.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/jvectormap/jquery-jvectormap.css') }}" rel="stylesheet" />
         <!-- Theme style -->
         <!--<link rel="stylesheet" href="dist/css/AdminLTE.min.css">-->
-        <link href="{{ asset('dist/css/AdminLTE.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/dist/css/AdminLTE.min.css') }}" rel="stylesheet" />
         <!-- AdminLTE Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
-        <link href="{{ asset('dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" />
         <!--<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">-->
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <!--custom css. -->
-        <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/css/custom.css') }}" rel="stylesheet" />
 
         <!-- Google Font -->
         <link rel="stylesheet"
@@ -1555,36 +1555,36 @@
         <!-- ./wrapper -->
 
         <!-- jQuery 3 -->
-        <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
         <!-- Bootstrap 3.3.7 -->
-        <script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
        <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
         <!-- FastClick -->
-        <script type="text/javascript" src="{{ asset('bower_components/fastclick/lib/fastclick.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/fastclick/lib/fastclick.js') }}"></script>
         <!--<script src="bower_components/fastclick/lib/fastclick.js"></script>-->
         <!-- AdminLTE App -->
         <!--<script src="dist/js/adminlte.min.js"></script>-->
-        <script type="text/javascript" src="{{ asset('dist/js/adminlte.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/dist/js/adminlte.min.js') }}"></script>
         <!-- Sparkline -->
         <!--<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>-->
-        <script type="text/javascript" src="{{ asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js') }}"></script>
         <!-- jvectormap  -->
         <!--<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>-->
-        <script type="text/javascript" src="{{ asset('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
        <!--<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>-->
-        <script type="text/javascript" src="{{ asset('plugins/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
         <!-- SlimScroll -->
         <!--<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>-->
-        <script type="text/javascript" src="{{ asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
         <!-- ChartJS -->
         <!--<script src="bower_components/chart.js/Chart.js"></script>-->
-        <script type="text/javascript" src="{{ asset('bower_components/chart.js/Chart.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/chart.js/Chart.js') }}"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <!--<script src="dist/js/pages/dashboard2.js"></script>-->
-        <script type="text/javascript" src="{{ asset('dist/js/pages/dashboard2.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/dist/js/pages/dashboard2.js') }}"></script>
         <!-- AdminLTE for demo purposes -->
         <!--<script src="dist/js/demo.js"></script>-->
-        <script type="text/javascript" src="{{ asset('dist/js/demo.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/dist/js/demo.js') }}"></script>
     </body>
 </html>

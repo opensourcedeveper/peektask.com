@@ -9,22 +9,22 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
-        <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" />
         <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
         <!-- Font Awesome -->
         <!--<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">-->
-        <link href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
         <!-- Ionicons -->
         <!--<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">-->
-        <link href="{{ asset('bower_components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/Ionicons/css/ionicons.min.css') }}" rel="stylesheet" />
         <!-- jvectormap -->
         <!--<link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">-->
-        <link href="{{ asset('bower_components/jvectormap/jquery-jvectormap.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/bower_components/jvectormap/jquery-jvectormap.css') }}" rel="stylesheet" />
         <!-- Theme style -->
         <!--<link rel="stylesheet" href="dist/css/AdminLTE.min.css">-->
-        <link href="{{ asset('dist/css/AdminLTE.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/dist/css/AdminLTE.min.css') }}" rel="stylesheet" />
         <!-- iCheck -->
-        <link href="{{ asset('plugins/iCheck/square/blue.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/plugins/iCheck/square/blue.css') }}" rel="stylesheet" />
 
 
 
@@ -105,11 +105,11 @@
         <!-- /.login-box -->
 
         <!-- jQuery 3 -->
-        <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <!-- Bootstrap 3.3.7 -->
-        <script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <!-- iCheck -->
-        <script type="text/javascript" src="{{ asset('plugins/iCheck/icheck.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/plugins/iCheck/icheck.min.js') }}"></script>
         <script>
 $(function () {
     $('input').iCheck({
